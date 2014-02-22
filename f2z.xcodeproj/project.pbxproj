@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2105D618B8EB1200B5AE20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D518B8EB1200B5AE20 /* UIKit.framework */; };
+		BE2105D818B8EB1200B5AE20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D718B8EB1200B5AE20 /* Foundation.framework */; };
+		BE2105DA18B8EB1200B5AE20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */; };
+		BE2105E018B8EB1200B5AE20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2105DE18B8EB1200B5AE20 /* InfoPlist.strings */; };
+		BE2105E218B8EB1200B5AE20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105E118B8EB1200B5AE20 /* main.m */; };
+		BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */; };
+		BE2105E818B8EB1200B5AE20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105E718B8EB1200B5AE20 /* Default.png */; };
+		BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105E918B8EB1200B5AE20 /* Default@2x.png */; };
+		BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */; };
+		BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */; };
+		BE2105F218B8EB1200B5AE20 /* F2ZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105F118B8EB1200B5AE20 /* F2ZFirstViewController.m */; };
+		BE2105F418B8EB1200B5AE20 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105F318B8EB1200B5AE20 /* first.png */; };
+		BE2105F618B8EB1200B5AE20 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105F518B8EB1200B5AE20 /* first@2x.png */; };
+		BE2105F918B8EB1200B5AE20 /* F2ZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105F818B8EB1200B5AE20 /* F2ZSecondViewController.m */; };
+		BE2105FB18B8EB1200B5AE20 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105FA18B8EB1200B5AE20 /* second.png */; };
+		BE2105FD18B8EB1200B5AE20 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105FC18B8EB1200B5AE20 /* second@2x.png */; };
+		BE21060518B8EB1200B5AE20 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21060418B8EB1200B5AE20 /* SenTestingKit.framework */; };
+		BE21060618B8EB1200B5AE20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D518B8EB1200B5AE20 /* UIKit.framework */; };
+		BE21060718B8EB1200B5AE20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D718B8EB1200B5AE20 /* Foundation.framework */; };
+		BE21060F18B8EB1200B5AE20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */; };
+		BE21061218B8EB1200B5AE20 /* f2zTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21061118B8EB1200B5AE20 /* f2zTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE21060818B8EB1200B5AE20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2105CA18B8EB1200B5AE20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2105D118B8EB1200B5AE20;
+			remoteInfo = f2z;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2105D218B8EB1200B5AE20 /* f2z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = f2z.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2105D518B8EB1200B5AE20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE2105D718B8EB1200B5AE20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE2105DD18B8EB1200B5AE20 /* f2z-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "f2z-Info.plist"; sourceTree = "<group>"; };
+		BE2105DF18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE2105E118B8EB1200B5AE20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE2105E318B8EB1200B5AE20 /* f2z-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "f2z-Prefix.pch"; sourceTree = "<group>"; };
+		BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZAppDelegate.h; sourceTree = "<group>"; };
+		BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2ZAppDelegate.m; sourceTree = "<group>"; };
+		BE2105E718B8EB1200B5AE20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BE2105E918B8EB1200B5AE20 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BE2105EE18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BE2105F018B8EB1200B5AE20 /* F2ZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZFirstViewController.h; sourceTree = "<group>"; };
+		BE2105F118B8EB1200B5AE20 /* F2ZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2ZFirstViewController.m; sourceTree = "<group>"; };
+		BE2105F318B8EB1200B5AE20 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		BE2105F518B8EB1200B5AE20 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		BE2105F718B8EB1200B5AE20 /* F2ZSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZSecondViewController.h; sourceTree = "<group>"; };
+		BE2105F818B8EB1200B5AE20 /* F2ZSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2ZSecondViewController.m; sourceTree = "<group>"; };
+		BE2105FA18B8EB1200B5AE20 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		BE2105FC18B8EB1200B5AE20 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BE21060318B8EB1200B5AE20 /* f2zTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = f2zTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE21060418B8EB1200B5AE20 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE21060C18B8EB1200B5AE20 /* f2zTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "f2zTests-Info.plist"; sourceTree = "<group>"; };
+		BE21060E18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE21061018B8EB1200B5AE20 /* f2zTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f2zTests.h; sourceTree = "<group>"; };
+		BE21061118B8EB1200B5AE20 /* f2zTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = f2zTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2105CF18B8EB1200B5AE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2105D618B8EB1200B5AE20 /* UIKit.framework in Frameworks */,
+				BE2105D818B8EB1200B5AE20 /* Foundation.framework in Frameworks */,
+				BE2105DA18B8EB1200B5AE20 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2105FF18B8EB1200B5AE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21060518B8EB1200B5AE20 /* SenTestingKit.framework in Frameworks */,
+				BE21060618B8EB1200B5AE20 /* UIKit.framework in Frameworks */,
+				BE21060718B8EB1200B5AE20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE2105C918B8EB1200B5AE20 = {
+			isa = PBXGroup;
+			children = (
+				BE2105DB18B8EB1200B5AE20 /* f2z */,
+				BE21060A18B8EB1200B5AE20 /* f2zTests */,
+				BE2105D418B8EB1200B5AE20 /* Frameworks */,
+				BE2105D318B8EB1200B5AE20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2105D318B8EB1200B5AE20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2105D218B8EB1200B5AE20 /* f2z.app */,
+				BE21060318B8EB1200B5AE20 /* f2zTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2105D418B8EB1200B5AE20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE2105D518B8EB1200B5AE20 /* UIKit.framework */,
+				BE2105D718B8EB1200B5AE20 /* Foundation.framework */,
+				BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */,
+				BE21060418B8EB1200B5AE20 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE2105DB18B8EB1200B5AE20 /* f2z */ = {
+			isa = PBXGroup;
+			children = (
+				BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */,
+				BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */,
+				BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */,
+				BE2105F018B8EB1200B5AE20 /* F2ZFirstViewController.h */,
+				BE2105F118B8EB1200B5AE20 /* F2ZFirstViewController.m */,
+				BE2105F318B8EB1200B5AE20 /* first.png */,
+				BE2105F518B8EB1200B5AE20 /* first@2x.png */,
+				BE2105F718B8EB1200B5AE20 /* F2ZSecondViewController.h */,
+				BE2105F818B8EB1200B5AE20 /* F2ZSecondViewController.m */,
+				BE2105FA18B8EB1200B5AE20 /* second.png */,
+				BE2105FC18B8EB1200B5AE20 /* second@2x.png */,
+				BE2105DC18B8EB1200B5AE20 /* Supporting Files */,
+			);
+			path = f2z;
+			sourceTree = "<group>";
+		};
+		BE2105DC18B8EB1200B5AE20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE2105DD18B8EB1200B5AE20 /* f2z-Info.plist */,
+				BE2105DE18B8EB1200B5AE20 /* InfoPlist.strings */,
+				BE2105E118B8EB1200B5AE20 /* main.m */,
+				BE2105E318B8EB1200B5AE20 /* f2z-Prefix.pch */,
+				BE2105E718B8EB1200B5AE20 /* Default.png */,
+				BE2105E918B8EB1200B5AE20 /* Default@2x.png */,
+				BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE21060A18B8EB1200B5AE20 /* f2zTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE21061018B8EB1200B5AE20 /* f2zTests.h */,
+				BE21061118B8EB1200B5AE20 /* f2zTests.m */,
+				BE21060B18B8EB1200B5AE20 /* Supporting Files */,
+			);
+			path = f2zTests;
+			sourceTree = "<group>";
+		};
+		BE21060B18B8EB1200B5AE20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE21060C18B8EB1200B5AE20 /* f2zTests-Info.plist */,
+				BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2105D118B8EB1200B5AE20 /* f2z */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE21061518B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2z" */;
+			buildPhases = (
+				BE2105CE18B8EB1200B5AE20 /* Sources */,
+				BE2105CF18B8EB1200B5AE20 /* Frameworks */,
+				BE2105D018B8EB1200B5AE20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = f2z;
+			productName = f2z;
+			productReference = BE2105D218B8EB1200B5AE20 /* f2z.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE21060218B8EB1200B5AE20 /* f2zTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE21061818B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2zTests" */;
+			buildPhases = (
+				BE2105FE18B8EB1200B5AE20 /* Sources */,
+				BE2105FF18B8EB1200B5AE20 /* Frameworks */,
+				BE21060018B8EB1200B5AE20 /* Resources */,
+				BE21060118B8EB1200B5AE20 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE21060918B8EB1200B5AE20 /* PBXTargetDependency */,
+			);
+			name = f2zTests;
+			productName = f2zTests;
+			productReference = BE21060318B8EB1200B5AE20 /* f2zTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE2105CA18B8EB1200B5AE20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = F2Z;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kempei Igarashi";
+			};
+			buildConfigurationList = BE2105CD18B8EB1200B5AE20 /* Build configuration list for PBXProject "f2z" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE2105C918B8EB1200B5AE20;
+			productRefGroup = BE2105D318B8EB1200B5AE20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE2105D118B8EB1200B5AE20 /* f2z */,
+				BE21060218B8EB1200B5AE20 /* f2zTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2105D018B8EB1200B5AE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2105E018B8EB1200B5AE20 /* InfoPlist.strings in Resources */,
+				BE2105E818B8EB1200B5AE20 /* Default.png in Resources */,
+				BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */,
+				BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */,
+				BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */,
+				BE2105F418B8EB1200B5AE20 /* first.png in Resources */,
+				BE2105F618B8EB1200B5AE20 /* first@2x.png in Resources */,
+				BE2105FB18B8EB1200B5AE20 /* second.png in Resources */,
+				BE2105FD18B8EB1200B5AE20 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE21060018B8EB1200B5AE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21060F18B8EB1200B5AE20 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE21060118B8EB1200B5AE20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2105CE18B8EB1200B5AE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2105E218B8EB1200B5AE20 /* main.m in Sources */,
+				BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */,
+				BE2105F218B8EB1200B5AE20 /* F2ZFirstViewController.m in Sources */,
+				BE2105F918B8EB1200B5AE20 /* F2ZSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2105FE18B8EB1200B5AE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21061218B8EB1200B5AE20 /* f2zTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE21060918B8EB1200B5AE20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2105D118B8EB1200B5AE20 /* f2z */;
+			targetProxy = BE21060818B8EB1200B5AE20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE2105DE18B8EB1200B5AE20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2105DF18B8EB1200B5AE20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2105EE18B8EB1200B5AE20 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE21060E18B8EB1200B5AE20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE21061318B8EB1200B5AE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE21061418B8EB1200B5AE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE21061618B8EB1200B5AE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				INFOPLIST_FILE = "f2z/f2z-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE21061718B8EB1200B5AE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				INFOPLIST_FILE = "f2z/f2z-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BE21061918B8EB1200B5AE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/f2z.app/f2z";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				INFOPLIST_FILE = "f2zTests/f2zTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BE21061A18B8EB1200B5AE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/f2z.app/f2z";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				INFOPLIST_FILE = "f2zTests/f2zTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2105CD18B8EB1200B5AE20 /* Build configuration list for PBXProject "f2z" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21061318B8EB1200B5AE20 /* Debug */,
+				BE21061418B8EB1200B5AE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE21061518B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2z" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21061618B8EB1200B5AE20 /* Debug */,
+				BE21061718B8EB1200B5AE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE21061818B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2zTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21061918B8EB1200B5AE20 /* Debug */,
+				BE21061A18B8EB1200B5AE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE2105CA18B8EB1200B5AE20 /* Project object */;
+}
