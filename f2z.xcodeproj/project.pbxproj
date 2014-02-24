@@ -17,7 +17,6 @@
 		BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105E918B8EB1200B5AE20 /* Default@2x.png */; };
 		BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */; };
 		BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */; };
-		BE2105F218B8EB1200B5AE20 /* F2ZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105F118B8EB1200B5AE20 /* F2ZFirstViewController.m */; };
 		BE2105F418B8EB1200B5AE20 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105F318B8EB1200B5AE20 /* first.png */; };
 		BE2105F618B8EB1200B5AE20 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105F518B8EB1200B5AE20 /* first@2x.png */; };
 		BE2105F918B8EB1200B5AE20 /* F2ZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105F818B8EB1200B5AE20 /* F2ZSecondViewController.m */; };
@@ -28,6 +27,13 @@
 		BE21060718B8EB1200B5AE20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D718B8EB1200B5AE20 /* Foundation.framework */; };
 		BE21060F18B8EB1200B5AE20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */; };
 		BE21061218B8EB1200B5AE20 /* f2zTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21061118B8EB1200B5AE20 /* f2zTests.m */; };
+		BE21061C18B8EB5300B5AE20 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */; };
+		BE21062218B8EFA800B5AE20 /* F2ZFelicaReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */; };
+		BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */ = {isa = PBXBuildFile; fileRef = BE21062318B8F92B00B5AE20 /* nfc110_ble.c */; };
+		BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062718B9E60A00B5AE20 /* F2ZRecord.m */; };
+		BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */; };
+		BEA815E818BA6456006FAFA2 /* libfelica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA815E718BA6456006FAFA2 /* libfelica.a */; };
+		BEB4F4DE18BA278B00056153 /* F2ZRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +61,6 @@
 		BE2105E918B8EB1200B5AE20 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BE2105EE18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BE2105F018B8EB1200B5AE20 /* F2ZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZFirstViewController.h; sourceTree = "<group>"; };
-		BE2105F118B8EB1200B5AE20 /* F2ZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2ZFirstViewController.m; sourceTree = "<group>"; };
 		BE2105F318B8EB1200B5AE20 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BE2105F518B8EB1200B5AE20 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		BE2105F718B8EB1200B5AE20 /* F2ZSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZSecondViewController.h; sourceTree = "<group>"; };
@@ -69,6 +73,18 @@
 		BE21060E18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE21061018B8EB1200B5AE20 /* f2zTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f2zTests.h; sourceTree = "<group>"; };
 		BE21061118B8EB1200B5AE20 /* f2zTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = f2zTests.m; sourceTree = "<group>"; };
+		BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BE21062018B8EFA700B5AE20 /* F2ZFelicaReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZFelicaReader.h; sourceTree = "<group>"; };
+		BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZFelicaReader.m; sourceTree = "<group>"; };
+		BE21062318B8F92B00B5AE20 /* nfc110_ble.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nfc110_ble.c; sourceTree = "<group>"; };
+		BE21062518B98EE900B5AE20 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		BE21062618B9E60A00B5AE20 /* F2ZRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZRecord.h; sourceTree = "<group>"; };
+		BE21062718B9E60A00B5AE20 /* F2ZRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecord.m; sourceTree = "<group>"; };
+		BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryViewController.h; sourceTree = "<group>"; };
+		BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryViewController.m; sourceTree = "<group>"; };
+		BEA815E718BA6456006FAFA2 /* libfelica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfelica.a; path = "../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios/libfelica.a"; sourceTree = "<group>"; };
+		BEB4F4DC18BA278B00056153 /* F2ZRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZRecordCell.h; sourceTree = "<group>"; };
+		BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecordCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE21061C18B8EB5300B5AE20 /* CoreBluetooth.framework in Frameworks */,
 				BE2105D618B8EB1200B5AE20 /* UIKit.framework in Frameworks */,
 				BE2105D818B8EB1200B5AE20 /* Foundation.framework in Frameworks */,
+				BEA815E818BA6456006FAFA2 /* libfelica.a in Frameworks */,
 				BE2105DA18B8EB1200B5AE20 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +135,8 @@
 		BE2105D418B8EB1200B5AE20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEA815E718BA6456006FAFA2 /* libfelica.a */,
+				BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */,
 				BE2105D518B8EB1200B5AE20 /* UIKit.framework */,
 				BE2105D718B8EB1200B5AE20 /* Foundation.framework */,
 				BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */,
@@ -128,11 +148,15 @@
 		BE2105DB18B8EB1200B5AE20 /* f2z */ = {
 			isa = PBXGroup;
 			children = (
+				BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewController.h */,
+				BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */,
+				BEB4F4DC18BA278B00056153 /* F2ZRecordCell.h */,
+				BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */,
 				BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */,
 				BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */,
+				BE21062018B8EFA700B5AE20 /* F2ZFelicaReader.h */,
+				BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */,
 				BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */,
-				BE2105F018B8EB1200B5AE20 /* F2ZFirstViewController.h */,
-				BE2105F118B8EB1200B5AE20 /* F2ZFirstViewController.m */,
 				BE2105F318B8EB1200B5AE20 /* first.png */,
 				BE2105F518B8EB1200B5AE20 /* first@2x.png */,
 				BE2105F718B8EB1200B5AE20 /* F2ZSecondViewController.h */,
@@ -140,6 +164,10 @@
 				BE2105FA18B8EB1200B5AE20 /* second.png */,
 				BE2105FC18B8EB1200B5AE20 /* second@2x.png */,
 				BE2105DC18B8EB1200B5AE20 /* Supporting Files */,
+				BE21062318B8F92B00B5AE20 /* nfc110_ble.c */,
+				BE21062518B98EE900B5AE20 /* Logging.h */,
+				BE21062618B9E60A00B5AE20 /* F2ZRecord.h */,
+				BE21062718B9E60A00B5AE20 /* F2ZRecord.m */,
 			);
 			path = f2z;
 			sourceTree = "<group>";
@@ -225,6 +253,11 @@
 				CLASSPREFIX = F2Z;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Kempei Igarashi";
+				TargetAttributes = {
+					BE2105D118B8EB1200B5AE20 = {
+						DevelopmentTeam = MF5KXN3ZQS;
+					};
+				};
 			};
 			buildConfigurationList = BE2105CD18B8EB1200B5AE20 /* Build configuration list for PBXProject "f2z" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -294,8 +327,12 @@
 			files = (
 				BE2105E218B8EB1200B5AE20 /* main.m in Sources */,
 				BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */,
-				BE2105F218B8EB1200B5AE20 /* F2ZFirstViewController.m in Sources */,
 				BE2105F918B8EB1200B5AE20 /* F2ZSecondViewController.m in Sources */,
+				BE21062218B8EFA800B5AE20 /* F2ZFelicaReader.m in Sources */,
+				BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */,
+				BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */,
+				BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewController.m in Sources */,
+				BEB4F4DE18BA278B00056153 /* F2ZRecordCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +441,24 @@
 		BE21061618B8EB1200B5AE20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include",
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include/stub",
+					"../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/include",
+				);
 				INFOPLIST_FILE = "f2z/f2z-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kigarash/Documents/経費システム/BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -415,10 +466,24 @@
 		BE21061718B8EB1200B5AE20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include",
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include/stub",
+					"../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/include",
+				);
 				INFOPLIST_FILE = "f2z/f2z-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kigarash/Documents/経費システム/BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -476,6 +541,7 @@
 				BE21061718B8EB1200B5AE20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE21061818B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2zTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +550,7 @@
 				BE21061A18B8EB1200B5AE20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
