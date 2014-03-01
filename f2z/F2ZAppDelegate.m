@@ -7,7 +7,6 @@
 //
 
 #import "F2ZAppDelegate.h"
-#import "F2ZFelicaReader.h"
 
 @implementation F2ZAppDelegate
 
@@ -37,11 +36,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        @autoreleasepool {
-            [[[F2ZFelicaReader alloc] init] pollAndRead];
-        }
-    });
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -7,15 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "F2ZFlickBar.h"
 
 @interface F2ZRecordCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *flickCount;
-@property (weak, nonatomic) IBOutlet UILabel *date;
-@property (weak, nonatomic) IBOutlet UILabel *paymentType;
-@property (weak, nonatomic) IBOutlet UILabel *station1;
-@property (weak, nonatomic) IBOutlet UILabel *station2;
-@property (weak, nonatomic) IBOutlet UILabel *amount;
-@property (weak, nonatomic) IBOutlet UILabel *zaim;
+- (void) incrementFlickCount; // animated
+- (void) decrementFlickCount; // animated
+
+@property (nonatomic) NSInteger flickCount;
+@property (nonatomic) UInt16 amount;
+@property (nonatomic) NSString *date;
+@property (nonatomic) NSString *station;
+@property (nonatomic) NSString *line;
+@property (nonatomic) NSString *flickCountComment;
+
+@property (weak, nonatomic) IBOutlet F2ZFlickBar *flickBar;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *flickCountCommentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lineLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
 
 @end

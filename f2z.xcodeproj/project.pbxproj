@@ -33,7 +33,18 @@
 		BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062718B9E60A00B5AE20 /* F2ZRecord.m */; };
 		BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */; };
 		BEA815E818BA6456006FAFA2 /* libfelica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA815E718BA6456006FAFA2 /* libfelica.a */; };
+		BEA815F418BCA17A006FAFA2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */; };
+		BEA815F518BCA17A006FAFA2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */; };
+		BEA815F618BCA17A006FAFA2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815F118BCA17A006FAFA2 /* FMDatabasePool.m */; };
+		BEA815F718BCA17A006FAFA2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815F318BCA17A006FAFA2 /* FMDatabaseQueue.m */; };
+		BEA815FA18BCA18A006FAFA2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815F918BCA18A006FAFA2 /* FMResultSet.m */; };
+		BEA815FC18BCA954006FAFA2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */; };
+		BEA815FE18BCA9DC006FAFA2 /* code.db in Resources */ = {isa = PBXBuildFile; fileRef = BEA815FD18BCA9DC006FAFA2 /* code.db */; };
+		BEA8160118BDE700006FAFA2 /* F2ZRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA8160018BDE700006FAFA2 /* F2ZRecordManager.m */; };
 		BEB4F4DE18BA278B00056153 /* F2ZRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */; };
+		BEC78A8218C20A4C00EDD7C3 /* F2ZFlickBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */; };
+		BEC78A8418C22C3400EDD7C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */; };
+		BEDB952218BEAC5A00888E95 /* F2ZHistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB952118BEAC5A00888E95 /* F2ZHistoryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +94,27 @@
 		BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryViewController.h; sourceTree = "<group>"; };
 		BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryViewController.m; sourceTree = "<group>"; };
 		BEA815E718BA6456006FAFA2 /* libfelica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfelica.a; path = "../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios/libfelica.a"; sourceTree = "<group>"; };
+		BEA815EC18BCA17A006FAFA2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../fmdb-master/src/FMDatabase.h"; sourceTree = "<group>"; };
+		BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../fmdb-master/src/FMDatabase.m"; sourceTree = "<group>"; };
+		BEA815EE18BCA17A006FAFA2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../fmdb-master/src/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../fmdb-master/src/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		BEA815F018BCA17A006FAFA2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../fmdb-master/src/FMDatabasePool.h"; sourceTree = "<group>"; };
+		BEA815F118BCA17A006FAFA2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../fmdb-master/src/FMDatabasePool.m"; sourceTree = "<group>"; };
+		BEA815F218BCA17A006FAFA2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../fmdb-master/src/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		BEA815F318BCA17A006FAFA2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../fmdb-master/src/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		BEA815F818BCA18A006FAFA2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../fmdb-master/src/FMResultSet.h"; sourceTree = "<group>"; };
+		BEA815F918BCA18A006FAFA2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../fmdb-master/src/FMResultSet.m"; sourceTree = "<group>"; };
+		BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		BEA815FD18BCA9DC006FAFA2 /* code.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = code.db; sourceTree = "<group>"; };
+		BEA815FF18BDE700006FAFA2 /* F2ZRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZRecordManager.h; sourceTree = "<group>"; };
+		BEA8160018BDE700006FAFA2 /* F2ZRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecordManager.m; sourceTree = "<group>"; };
 		BEB4F4DC18BA278B00056153 /* F2ZRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZRecordCell.h; sourceTree = "<group>"; };
 		BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecordCell.m; sourceTree = "<group>"; };
+		BEC78A8018C20A4C00EDD7C3 /* F2ZFlickBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZFlickBar.h; sourceTree = "<group>"; };
+		BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZFlickBar.m; sourceTree = "<group>"; };
+		BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEDB952018BEAC5A00888E95 /* F2ZHistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryDetailViewController.h; sourceTree = "<group>"; };
+		BEDB952118BEAC5A00888E95 /* F2ZHistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC78A8418C22C3400EDD7C3 /* QuartzCore.framework in Frameworks */,
+				BEA815FC18BCA954006FAFA2 /* libsqlite3.0.dylib in Frameworks */,
 				BE21061C18B8EB5300B5AE20 /* CoreBluetooth.framework in Frameworks */,
 				BE2105D618B8EB1200B5AE20 /* UIKit.framework in Frameworks */,
 				BE2105D818B8EB1200B5AE20 /* Foundation.framework in Frameworks */,
@@ -135,6 +167,8 @@
 		BE2105D418B8EB1200B5AE20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */,
+				BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */,
 				BEA815E718BA6456006FAFA2 /* libfelica.a */,
 				BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */,
 				BE2105D518B8EB1200B5AE20 /* UIKit.framework */,
@@ -148,15 +182,22 @@
 		BE2105DB18B8EB1200B5AE20 /* f2z */ = {
 			isa = PBXGroup;
 			children = (
+				BEA815EB18BCA073006FAFA2 /* lib */,
 				BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewController.h */,
 				BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */,
 				BEB4F4DC18BA278B00056153 /* F2ZRecordCell.h */,
 				BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */,
+				BEC78A8018C20A4C00EDD7C3 /* F2ZFlickBar.h */,
+				BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */,
 				BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */,
 				BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */,
 				BE21062018B8EFA700B5AE20 /* F2ZFelicaReader.h */,
 				BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */,
+				BEA815FF18BDE700006FAFA2 /* F2ZRecordManager.h */,
+				BEA8160018BDE700006FAFA2 /* F2ZRecordManager.m */,
 				BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */,
+				BEDB952018BEAC5A00888E95 /* F2ZHistoryDetailViewController.h */,
+				BEDB952118BEAC5A00888E95 /* F2ZHistoryDetailViewController.m */,
 				BE2105F318B8EB1200B5AE20 /* first.png */,
 				BE2105F518B8EB1200B5AE20 /* first@2x.png */,
 				BE2105F718B8EB1200B5AE20 /* F2ZSecondViewController.h */,
@@ -164,10 +205,9 @@
 				BE2105FA18B8EB1200B5AE20 /* second.png */,
 				BE2105FC18B8EB1200B5AE20 /* second@2x.png */,
 				BE2105DC18B8EB1200B5AE20 /* Supporting Files */,
-				BE21062318B8F92B00B5AE20 /* nfc110_ble.c */,
-				BE21062518B98EE900B5AE20 /* Logging.h */,
 				BE21062618B9E60A00B5AE20 /* F2ZRecord.h */,
 				BE21062718B9E60A00B5AE20 /* F2ZRecord.m */,
+				BEA815FD18BCA9DC006FAFA2 /* code.db */,
 			);
 			path = f2z;
 			sourceTree = "<group>";
@@ -203,6 +243,25 @@
 				BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEA815EB18BCA073006FAFA2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BEA815EC18BCA17A006FAFA2 /* FMDatabase.h */,
+				BEA815F818BCA18A006FAFA2 /* FMResultSet.h */,
+				BEA815F918BCA18A006FAFA2 /* FMResultSet.m */,
+				BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */,
+				BEA815EE18BCA17A006FAFA2 /* FMDatabaseAdditions.h */,
+				BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */,
+				BEA815F018BCA17A006FAFA2 /* FMDatabasePool.h */,
+				BEA815F118BCA17A006FAFA2 /* FMDatabasePool.m */,
+				BEA815F218BCA17A006FAFA2 /* FMDatabaseQueue.h */,
+				BEA815F318BCA17A006FAFA2 /* FMDatabaseQueue.m */,
+				BE21062318B8F92B00B5AE20 /* nfc110_ble.c */,
+				BE21062518B98EE900B5AE20 /* Logging.h */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +343,7 @@
 			files = (
 				BE2105E018B8EB1200B5AE20 /* InfoPlist.strings in Resources */,
 				BE2105E818B8EB1200B5AE20 /* Default.png in Resources */,
+				BEA815FE18BCA9DC006FAFA2 /* code.db in Resources */,
 				BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */,
 				BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */,
 				BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */,
@@ -328,11 +388,19 @@
 				BE2105E218B8EB1200B5AE20 /* main.m in Sources */,
 				BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */,
 				BE2105F918B8EB1200B5AE20 /* F2ZSecondViewController.m in Sources */,
+				BEA815F418BCA17A006FAFA2 /* FMDatabase.m in Sources */,
 				BE21062218B8EFA800B5AE20 /* F2ZFelicaReader.m in Sources */,
+				BEA815F718BCA17A006FAFA2 /* FMDatabaseQueue.m in Sources */,
+				BEA815FA18BCA18A006FAFA2 /* FMResultSet.m in Sources */,
+				BEA815F618BCA17A006FAFA2 /* FMDatabasePool.m in Sources */,
+				BEC78A8218C20A4C00EDD7C3 /* F2ZFlickBar.m in Sources */,
 				BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */,
 				BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */,
 				BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewController.m in Sources */,
 				BEB4F4DE18BA278B00056153 /* F2ZRecordCell.m in Sources */,
+				BEA815F518BCA17A006FAFA2 /* FMDatabaseAdditions.m in Sources */,
+				BEDB952218BEAC5A00888E95 /* F2ZHistoryDetailViewController.m in Sources */,
+				BEA8160118BDE700006FAFA2 /* F2ZRecordManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
