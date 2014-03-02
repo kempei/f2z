@@ -8,9 +8,12 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "F2ZFlickBar.h"
+#import "UIColor+iOS7Colors.h"
 
-const int BAR_X = 20;
-const int BAR_WIDTH = 20;
+
+const int BAR_ADJUST_X = 10;
+const int BAR_WIDTH = 30;
+const int BAR_HEIGHT = 80;
 
 @implementation MyLayerDelegate
 - (void)drawLayer:(CALayer*)layer inContext:(CGContextRef)context
@@ -23,7 +26,9 @@ const int BAR_WIDTH = 20;
 @implementation F2ZFlickBar
 {
     MyLayerDelegate *del;
-    CALayer *customDrawn;
+    CAGradientLayer *rectLayer;
+    
+    NSArray *colorPallete;
 }
 
 - (void) increment
@@ -45,47 +50,58 @@ const int BAR_WIDTH = 20;
     [self setPosition:NO];
 }
 
+- (void) setPosition_
+{
+    rectLayer.position = CGPointMake((_flickCount + 1) * BAR_WIDTH + BAR_WIDTH/2 - BAR_ADJUST_X, BAR_HEIGHT/2);
+    rectLayer.colors = [colorPallete objectAtIndex:_flickCount+1];
+}
+
 - (void) setPosition:(BOOL)animated
 {
     if (animated) {
-        int direction = -1;
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-        CGPoint origin = customDrawn.position;
-        customDrawn.position = CGPointMake((_flickCount + 1) * BAR_WIDTH + 10, 35);
-        if (origin.x < customDrawn.position.x) {
-            direction = 1;
-        }
+        CGPoint origin = rectLayer.position;
+        [self setPosition_];
         animation.fromValue = [NSValue valueWithCGPoint:origin];
-        animation.toValue = [NSValue valueWithCGPoint:CGPointMake(origin.x + (20 * direction), origin.y)];
-        animation.duration = 0.5;
+        animation.toValue = [NSValue
+                             valueWithCGPoint:CGPointMake(origin.x +
+                                                          (BAR_WIDTH * (origin.x < rectLayer.position.x ? 1 : -1)),
+                                                          origin.y)];
+        animation.duration = 0.8;
         animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.33 :1.77 :0.62 :0.78];
-//        animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.13 :1.09 :0.41 :1.48];
-        [customDrawn addAnimation:animation forKey:@"move"];
+        [rectLayer addAnimation:animation forKey:@"move"];
     } else {
         [CATransaction begin];
         [CATransaction setValue:(id)kCFBooleanTrue
                          forKey:kCATransactionDisableActions];
-    }
-    customDrawn.position = CGPointMake((_flickCount + 1) * BAR_WIDTH + 10, 35);
-    if (!animated) {
+        [self setPosition_];
         [CATransaction commit];
     }
-    [customDrawn setNeedsDisplay];
+    [rectLayer setNeedsDisplay];
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
-
-    del = [[MyLayerDelegate alloc] init];
-
-    customDrawn = [CALayer layer];
-    customDrawn.bounds = CGRectMake(0, 0, BAR_WIDTH, 70);
-    customDrawn.backgroundColor = [UIColor orangeColor].CGColor;
+    
+    colorPallete = @[[UIColor iOS7silverGradient],
+                     [UIColor iOS7greenGradient],
+                     [UIColor iOS7orangeGradient],
+                     [UIColor iOS7bluegreenGradient],
+                     [UIColor iOS7yellowGradient],
+                     [UIColor iOS7magenta2Gradient],
+                     [UIColor iOS7red2Gradient],
+                     [UIColor iOS7tealGradient],
+                     [UIColor iOS7grayGradient],
+                     [UIColor iOS7magentaGradient]
+                     ];
+    
+    //del = [[MyLayerDelegate alloc] init];
+    //rectLayer.delegate = del;
+    rectLayer = [CAGradientLayer layer];
+    rectLayer.bounds = CGRectMake(0, 0, BAR_WIDTH, BAR_HEIGHT + BAR_WIDTH/2); // init
     [self setPosition:NO];
-    //customDrawn.delegate = del;
-    //customDrawn.masksToBounds = YES;
-    [self.layer addSublayer:customDrawn];
+    [self.layer addSublayer:rectLayer];
     
     return self;
 }

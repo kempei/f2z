@@ -32,6 +32,19 @@
 		BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */ = {isa = PBXBuildFile; fileRef = BE21062318B8F92B00B5AE20 /* nfc110_ble.c */; };
 		BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062718B9E60A00B5AE20 /* F2ZRecord.m */; };
 		BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */; };
+		BE6C212218C2BC0D004B2038 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C211D18C2BC0D004B2038 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212318C2BC0D004B2038 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C211F18C2BC0D004B2038 /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212418C2BC0D004B2038 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212118C2BC0D004B2038 /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212918C2BC1C004B2038 /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212618C2BC1C004B2038 /* GTMOAuthAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212A18C2BC1C004B2038 /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212818C2BC1C004B2038 /* GTMOAuthSignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212E18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212C18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212F18C2BC29004B2038 /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6C212D18C2BC29004B2038 /* GTMOAuthViewTouch.xib */; };
+		BE6C213118C2BD1A004B2038 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C213018C2BD1A004B2038 /* SystemConfiguration.framework */; };
+		BE6C213318C2BD22004B2038 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C213218C2BD22004B2038 /* Security.framework */; };
+		BE6C213618C2C472004B2038 /* F2ZZaimAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C213518C2C472004B2038 /* F2ZZaimAuthController.m */; };
+		BE6C213A18C364FC004B2038 /* UIColor+iOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C213918C364FC004B2038 /* UIColor+iOS7Colors.m */; };
+		BE6C213D18C3788E004B2038 /* F2ZDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C213C18C3788E004B2038 /* F2ZDBManager.m */; };
+		BE6C213F18C37C63004B2038 /* history.db in Resources */ = {isa = PBXBuildFile; fileRef = BE6C213E18C37C63004B2038 /* history.db */; };
 		BEA815E818BA6456006FAFA2 /* libfelica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA815E718BA6456006FAFA2 /* libfelica.a */; };
 		BEA815F418BCA17A006FAFA2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */; };
 		BEA815F518BCA17A006FAFA2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */; };
@@ -93,6 +106,28 @@
 		BE21062718B9E60A00B5AE20 /* F2ZRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecord.m; sourceTree = "<group>"; };
 		BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryViewController.h; sourceTree = "<group>"; };
 		BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryViewController.m; sourceTree = "<group>"; };
+		BE6C211C18C2BC0D004B2038 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcher.h"; sourceTree = SOURCE_ROOT; };
+		BE6C211D18C2BC0D004B2038 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcher.m"; sourceTree = SOURCE_ROOT; };
+		BE6C211E18C2BC0D004B2038 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetchHistory.h; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetchHistory.h"; sourceTree = SOURCE_ROOT; };
+		BE6C211F18C2BC0D004B2038 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetchHistory.m; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetchHistory.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212018C2BC0D004B2038 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherLogging.h; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcherLogging.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212118C2BC0D004B2038 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherLogging.m; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcherLogging.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212518C2BC1C004B2038 /* GTMOAuthAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthAuthentication.h; path = "gtm-oauth/Source/GTMOAuthAuthentication.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212618C2BC1C004B2038 /* GTMOAuthAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthAuthentication.m; path = "gtm-oauth/Source/GTMOAuthAuthentication.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212718C2BC1C004B2038 /* GTMOAuthSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthSignIn.h; path = "gtm-oauth/Source/GTMOAuthSignIn.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212818C2BC1C004B2038 /* GTMOAuthSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthSignIn.m; path = "gtm-oauth/Source/GTMOAuthSignIn.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212B18C2BC29004B2038 /* GTMOAuthViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthViewControllerTouch.h; path = "gtm-oauth/Source/Touch/GTMOAuthViewControllerTouch.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212C18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthViewControllerTouch.m; path = "gtm-oauth/Source/Touch/GTMOAuthViewControllerTouch.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212D18C2BC29004B2038 /* GTMOAuthViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuthViewTouch.xib; path = "gtm-oauth/Source/Touch/GTMOAuthViewTouch.xib"; sourceTree = SOURCE_ROOT; };
+		BE6C213018C2BD1A004B2038 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE6C213218C2BD22004B2038 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE6C213418C2C472004B2038 /* F2ZZaimAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZZaimAuthController.h; sourceTree = "<group>"; };
+		BE6C213518C2C472004B2038 /* F2ZZaimAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZZaimAuthController.m; sourceTree = "<group>"; };
+		BE6C213818C364FC004B2038 /* UIColor+iOS7Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iOS7Colors.h"; sourceTree = "<group>"; };
+		BE6C213918C364FC004B2038 /* UIColor+iOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS7Colors.m"; sourceTree = "<group>"; };
+		BE6C213B18C3788E004B2038 /* F2ZDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZDBManager.h; sourceTree = "<group>"; };
+		BE6C213C18C3788E004B2038 /* F2ZDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZDBManager.m; sourceTree = "<group>"; };
+		BE6C213E18C37C63004B2038 /* history.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = history.db; sourceTree = "<group>"; };
 		BEA815E718BA6456006FAFA2 /* libfelica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfelica.a; path = "../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios/libfelica.a"; sourceTree = "<group>"; };
 		BEA815EC18BCA17A006FAFA2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../fmdb-master/src/FMDatabase.h"; sourceTree = "<group>"; };
 		BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../fmdb-master/src/FMDatabase.m"; sourceTree = "<group>"; };
@@ -122,6 +157,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6C213318C2BD22004B2038 /* Security.framework in Frameworks */,
+				BE6C213118C2BD1A004B2038 /* SystemConfiguration.framework in Frameworks */,
 				BEC78A8418C22C3400EDD7C3 /* QuartzCore.framework in Frameworks */,
 				BEA815FC18BCA954006FAFA2 /* libsqlite3.0.dylib in Frameworks */,
 				BE21061C18B8EB5300B5AE20 /* CoreBluetooth.framework in Frameworks */,
@@ -167,6 +204,8 @@
 		BE2105D418B8EB1200B5AE20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE6C213218C2BD22004B2038 /* Security.framework */,
+				BE6C213018C2BD1A004B2038 /* SystemConfiguration.framework */,
 				BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */,
 				BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */,
 				BEA815E718BA6456006FAFA2 /* libfelica.a */,
@@ -182,13 +221,16 @@
 		BE2105DB18B8EB1200B5AE20 /* f2z */ = {
 			isa = PBXGroup;
 			children = (
-				BEA815EB18BCA073006FAFA2 /* lib */,
 				BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewController.h */,
 				BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewController.m */,
+				BE21062618B9E60A00B5AE20 /* F2ZRecord.h */,
+				BE21062718B9E60A00B5AE20 /* F2ZRecord.m */,
 				BEB4F4DC18BA278B00056153 /* F2ZRecordCell.h */,
 				BEB4F4DD18BA278B00056153 /* F2ZRecordCell.m */,
 				BEC78A8018C20A4C00EDD7C3 /* F2ZFlickBar.h */,
 				BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */,
+				BE6C213418C2C472004B2038 /* F2ZZaimAuthController.h */,
+				BE6C213518C2C472004B2038 /* F2ZZaimAuthController.m */,
 				BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */,
 				BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */,
 				BE21062018B8EFA700B5AE20 /* F2ZFelicaReader.h */,
@@ -204,10 +246,12 @@
 				BE2105F818B8EB1200B5AE20 /* F2ZSecondViewController.m */,
 				BE2105FA18B8EB1200B5AE20 /* second.png */,
 				BE2105FC18B8EB1200B5AE20 /* second@2x.png */,
+				BEA815EB18BCA073006FAFA2 /* lib */,
 				BE2105DC18B8EB1200B5AE20 /* Supporting Files */,
-				BE21062618B9E60A00B5AE20 /* F2ZRecord.h */,
-				BE21062718B9E60A00B5AE20 /* F2ZRecord.m */,
 				BEA815FD18BCA9DC006FAFA2 /* code.db */,
+				BE6C213E18C37C63004B2038 /* history.db */,
+				BE6C213B18C3788E004B2038 /* F2ZDBManager.h */,
+				BE6C213C18C3788E004B2038 /* F2ZDBManager.m */,
 			);
 			path = f2z;
 			sourceTree = "<group>";
@@ -245,9 +289,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BE6C211B18C2BBC2004B2038 /* gtm-oauth */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C212D18C2BC29004B2038 /* GTMOAuthViewTouch.xib */,
+				BE6C212B18C2BC29004B2038 /* GTMOAuthViewControllerTouch.h */,
+				BE6C212C18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m */,
+				BE6C212518C2BC1C004B2038 /* GTMOAuthAuthentication.h */,
+				BE6C212618C2BC1C004B2038 /* GTMOAuthAuthentication.m */,
+				BE6C212718C2BC1C004B2038 /* GTMOAuthSignIn.h */,
+				BE6C212818C2BC1C004B2038 /* GTMOAuthSignIn.m */,
+				BE6C211C18C2BC0D004B2038 /* GTMHTTPFetcher.h */,
+				BE6C211D18C2BC0D004B2038 /* GTMHTTPFetcher.m */,
+				BE6C211E18C2BC0D004B2038 /* GTMHTTPFetchHistory.h */,
+				BE6C211F18C2BC0D004B2038 /* GTMHTTPFetchHistory.m */,
+				BE6C212018C2BC0D004B2038 /* GTMHTTPFetcherLogging.h */,
+				BE6C212118C2BC0D004B2038 /* GTMHTTPFetcherLogging.m */,
+			);
+			name = "gtm-oauth";
+			sourceTree = "<group>";
+		};
+		BE6C213718C364D4004B2038 /* iOSColors */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C213818C364FC004B2038 /* UIColor+iOS7Colors.h */,
+				BE6C213918C364FC004B2038 /* UIColor+iOS7Colors.m */,
+			);
+			name = iOSColors;
+			sourceTree = "<group>";
+		};
 		BEA815EB18BCA073006FAFA2 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				BE6C213718C364D4004B2038 /* iOSColors */,
+				BE6C211B18C2BBC2004B2038 /* gtm-oauth */,
 				BEA815EC18BCA17A006FAFA2 /* FMDatabase.h */,
 				BEA815F818BCA18A006FAFA2 /* FMResultSet.h */,
 				BEA815F918BCA18A006FAFA2 /* FMResultSet.m */,
@@ -344,6 +419,8 @@
 				BE2105E018B8EB1200B5AE20 /* InfoPlist.strings in Resources */,
 				BE2105E818B8EB1200B5AE20 /* Default.png in Resources */,
 				BEA815FE18BCA9DC006FAFA2 /* code.db in Resources */,
+				BE6C212F18C2BC29004B2038 /* GTMOAuthViewTouch.xib in Resources */,
+				BE6C213F18C37C63004B2038 /* history.db in Resources */,
 				BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */,
 				BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */,
 				BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */,
@@ -386,20 +463,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2105E218B8EB1200B5AE20 /* main.m in Sources */,
+				BE6C212218C2BC0D004B2038 /* GTMHTTPFetcher.m in Sources */,
 				BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */,
+				BE6C213A18C364FC004B2038 /* UIColor+iOS7Colors.m in Sources */,
 				BE2105F918B8EB1200B5AE20 /* F2ZSecondViewController.m in Sources */,
+				BE6C212A18C2BC1C004B2038 /* GTMOAuthSignIn.m in Sources */,
 				BEA815F418BCA17A006FAFA2 /* FMDatabase.m in Sources */,
 				BE21062218B8EFA800B5AE20 /* F2ZFelicaReader.m in Sources */,
 				BEA815F718BCA17A006FAFA2 /* FMDatabaseQueue.m in Sources */,
 				BEA815FA18BCA18A006FAFA2 /* FMResultSet.m in Sources */,
 				BEA815F618BCA17A006FAFA2 /* FMDatabasePool.m in Sources */,
 				BEC78A8218C20A4C00EDD7C3 /* F2ZFlickBar.m in Sources */,
+				BE6C212318C2BC0D004B2038 /* GTMHTTPFetchHistory.m in Sources */,
 				BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */,
 				BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */,
 				BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewController.m in Sources */,
+				BE6C212E18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m in Sources */,
 				BEB4F4DE18BA278B00056153 /* F2ZRecordCell.m in Sources */,
+				BE6C213D18C3788E004B2038 /* F2ZDBManager.m in Sources */,
 				BEA815F518BCA17A006FAFA2 /* FMDatabaseAdditions.m in Sources */,
+				BE6C212918C2BC1C004B2038 /* GTMOAuthAuthentication.m in Sources */,
 				BEDB952218BEAC5A00888E95 /* F2ZHistoryDetailViewController.m in Sources */,
+				BE6C213618C2C472004B2038 /* F2ZZaimAuthController.m in Sources */,
+				BE6C212418C2BC0D004B2038 /* GTMHTTPFetcherLogging.m in Sources */,
 				BEA8160118BDE700006FAFA2 /* F2ZRecordManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

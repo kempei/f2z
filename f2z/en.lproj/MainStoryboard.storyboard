@@ -53,79 +53,79 @@
         <scene sceneID="O71-rF-DaL">
             <objects>
                 <tableViewController storyboardIdentifier="history" title="History" id="2Vc-1X-pex" customClass="F2ZHistoryViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" id="cr1-bf-fWU">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="22" sectionFooterHeight="22" id="cr1-bf-fWU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="record" rowHeight="70" id="wEh-at-tvv" customClass="F2ZRecordCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="70"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="record" rowHeight="81" id="wEh-at-tvv" customClass="F2ZRecordCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wEh-at-tvv" id="a6d-bi-5sX">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Os9-er-FmR" customClass="F2ZFlickBar">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Os9-er-FmR" customClass="F2ZFlickBar">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="" text="池袋▷新宿あああああああああ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VV-vd-yDQ">
+                                            <rect key="frame" x="20" y="33" width="280" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
+                                        </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="" text="12月30日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-64-wuI">
-                                            <rect key="frame" x="20" y="0.0" width="54" height="18"/>
+                                            <rect key="frame" x="20" y="14" width="54" height="12"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="54" id="HTg-bW-fbs"/>
+                                                <constraint firstAttribute="width" constant="54" id="7JJ-fm-2Eo"/>
+                                                <constraint firstAttribute="height" constant="12" id="mld-rp-58m"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="" text="¥50,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu5-vS-fY9">
-                                            <rect key="frame" x="228" y="0.0" width="72" height="21"/>
+                                            <rect key="frame" x="228" y="14" width="72" height="18"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="UlI-gg-KaE"/>
-                                                <constraint firstAttribute="width" constant="72" id="hw9-58-yzq"/>
+                                                <constraint firstAttribute="width" constant="72" id="fyg-ZP-p4F"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="" text="西武池袋線他" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTr-hx-PZg">
-                                            <rect key="frame" x="20" y="43" width="280" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="" text="PJ#30055100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="pUb-eU-r1b">
-                                            <rect key="frame" x="84" y="0.0" width="144" height="18"/>
+                                            <rect key="frame" x="20" y="56" width="280" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="" text="池袋▷新宿" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VV-vd-yDQ">
-                                            <rect key="frame" x="20" y="20" width="280" height="27"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="" text="PJ#30055100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="pUb-eU-r1b">
+                                            <rect key="frame" x="84" y="14" width="144" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="shadowOffset" width="1" height="1"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="jd2-64-wuI" firstAttribute="top" secondItem="a6d-bi-5sX" secondAttribute="top" id="43j-Xz-0Xx"/>
-                                        <constraint firstAttribute="bottom" secondItem="6VV-vd-yDQ" secondAttribute="bottom" constant="22" id="5qm-XE-Efv"/>
-                                        <constraint firstItem="jd2-64-wuI" firstAttribute="leading" secondItem="6VV-vd-yDQ" secondAttribute="leading" id="7Yk-IL-deY"/>
-                                        <constraint firstItem="6VV-vd-yDQ" firstAttribute="leading" secondItem="kTr-hx-PZg" secondAttribute="leading" id="CGU-UY-elh"/>
-                                        <constraint firstItem="fu5-vS-fY9" firstAttribute="top" secondItem="pUb-eU-r1b" secondAttribute="top" id="CYP-OS-yHP"/>
-                                        <constraint firstItem="pUb-eU-r1b" firstAttribute="leading" secondItem="jd2-64-wuI" secondAttribute="trailing" constant="10" id="Jik-7u-kU8"/>
-                                        <constraint firstItem="pUb-eU-r1b" firstAttribute="baseline" secondItem="jd2-64-wuI" secondAttribute="baseline" id="JxJ-lX-BOH"/>
-                                        <constraint firstItem="kTr-hx-PZg" firstAttribute="top" secondItem="fu5-vS-fY9" secondAttribute="bottom" constant="22" id="NX6-aO-98b"/>
-                                        <constraint firstItem="6VV-vd-yDQ" firstAttribute="top" secondItem="jd2-64-wuI" secondAttribute="bottom" constant="2" id="SWL-Cy-GBZ"/>
-                                        <constraint firstItem="6VV-vd-yDQ" firstAttribute="trailing" secondItem="kTr-hx-PZg" secondAttribute="trailing" id="bZ7-f0-hPK"/>
-                                        <constraint firstItem="6VV-vd-yDQ" firstAttribute="top" secondItem="a6d-bi-5sX" secondAttribute="top" constant="20" symbolic="YES" id="nkC-5N-Sd6"/>
-                                        <constraint firstItem="jd2-64-wuI" firstAttribute="top" secondItem="pUb-eU-r1b" secondAttribute="top" id="t5C-SA-c2Y"/>
-                                        <constraint firstItem="fu5-vS-fY9" firstAttribute="leading" secondItem="pUb-eU-r1b" secondAttribute="trailing" id="u3V-1Q-RUn"/>
-                                        <constraint firstAttribute="trailing" secondItem="fu5-vS-fY9" secondAttribute="trailing" constant="20" symbolic="YES" id="u8S-Mw-65Q"/>
-                                        <constraint firstAttribute="bottom" secondItem="kTr-hx-PZg" secondAttribute="bottom" constant="4" id="vjo-th-dVa"/>
-                                        <constraint firstItem="jd2-64-wuI" firstAttribute="leading" secondItem="a6d-bi-5sX" secondAttribute="leading" constant="20" symbolic="YES" id="xd6-oK-K1j"/>
-                                        <constraint firstItem="fu5-vS-fY9" firstAttribute="trailing" secondItem="6VV-vd-yDQ" secondAttribute="trailing" id="ypQ-p7-BN7"/>
+                                        <constraint firstAttribute="trailing" secondItem="fu5-vS-fY9" secondAttribute="trailing" constant="20" symbolic="YES" id="3Ux-fn-TF7"/>
+                                        <constraint firstItem="jd2-64-wuI" firstAttribute="leading" secondItem="a6d-bi-5sX" secondAttribute="leading" constant="20" symbolic="YES" id="5jI-2M-Mlw"/>
+                                        <constraint firstItem="jd2-64-wuI" firstAttribute="leading" secondItem="kTr-hx-PZg" secondAttribute="leading" id="AnA-Xw-YuI"/>
+                                        <constraint firstItem="fu5-vS-fY9" firstAttribute="leading" secondItem="pUb-eU-r1b" secondAttribute="trailing" id="O75-oI-A4C"/>
+                                        <constraint firstItem="jd2-64-wuI" firstAttribute="top" secondItem="a6d-bi-5sX" secondAttribute="top" constant="14" id="OKa-aJ-igw"/>
+                                        <constraint firstItem="jd2-64-wuI" firstAttribute="baseline" secondItem="pUb-eU-r1b" secondAttribute="baseline" id="Oee-Vd-HpO"/>
+                                        <constraint firstItem="pUb-eU-r1b" firstAttribute="top" secondItem="jd2-64-wuI" secondAttribute="top" id="PeX-nZ-RIi"/>
+                                        <constraint firstAttribute="bottom" secondItem="kTr-hx-PZg" secondAttribute="bottom" constant="12" id="XA7-5G-hQb"/>
+                                        <constraint firstItem="Os9-er-FmR" firstAttribute="top" secondItem="a6d-bi-5sX" secondAttribute="top" id="Y8Q-N1-KG0"/>
+                                        <constraint firstItem="kTr-hx-PZg" firstAttribute="top" secondItem="jd2-64-wuI" secondAttribute="bottom" constant="30" id="YZY-zz-ZHR"/>
+                                        <constraint firstAttribute="bottom" secondItem="Os9-er-FmR" secondAttribute="bottom" id="eE5-iq-eVu"/>
+                                        <constraint firstItem="kTr-hx-PZg" firstAttribute="top" secondItem="fu5-vS-fY9" secondAttribute="bottom" constant="24" id="jZf-vp-Tc8"/>
+                                        <constraint firstItem="fu5-vS-fY9" firstAttribute="top" secondItem="pUb-eU-r1b" secondAttribute="top" id="lt0-2h-bnA"/>
+                                        <constraint firstItem="kTr-hx-PZg" firstAttribute="trailing" secondItem="fu5-vS-fY9" secondAttribute="trailing" id="nGe-0O-jzC"/>
+                                        <constraint firstItem="Os9-er-FmR" firstAttribute="leading" secondItem="a6d-bi-5sX" secondAttribute="leading" id="qdu-Ye-jjT"/>
+                                        <constraint firstItem="Os9-er-FmR" firstAttribute="centerX" secondItem="kTr-hx-PZg" secondAttribute="centerX" id="vL7-wB-8vD"/>
+                                        <constraint firstItem="pUb-eU-r1b" firstAttribute="leading" secondItem="jd2-64-wuI" secondAttribute="trailing" constant="10" id="yZN-8r-um7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

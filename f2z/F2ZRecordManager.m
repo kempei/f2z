@@ -8,6 +8,7 @@
 
 #import "F2ZRecordManager.h"
 #import "FMDatabase.h"
+#import "F2ZDBManager.h"
 
 NS_ENUM(NSInteger, F2ZOpType) {
     F2ZOpTypeRail,
@@ -17,7 +18,6 @@ NS_ENUM(NSInteger, F2ZOpType) {
 
 @implementation F2ZRecordManager
 {
-    FMDatabase *db;
     NSMutableDictionary *dict;
     NSMutableDictionary *linedict;
     
@@ -107,37 +107,6 @@ NS_ENUM(NSInteger, F2ZOpType) {
                       @0x17:@"入場/出場(乗継割引)",
                       @0x21:@"入場/出場(バス等乗継割引)"};
 
-    NSError* error = nil;
-    NSString* work_path;
-    NSString* database_filename;
-    
-    NSString* database_path;
-    NSString* template_path;
-    
-    database_filename = @"code.db";
-    work_path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    database_path = [NSString stringWithFormat:@"%@/%@", work_path, database_filename];
-    
-    // 文書フォルダーにデータベースファイルが存在しているかを確認します。
-    NSFileManager* manager = [NSFileManager defaultManager];
-    //[manager removeItemAtPath:database_path error:&error]; // for new db
-    if (![manager fileExistsAtPath:database_path])
-    {
-        // 文書フォルダーに存在しない場合は、データベースの複製元をバンドルから取得します。
-        template_path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:database_filename];
-        // バンドルから取得したデータベースファイルを文書フォルダーにコピーします。
-        LogDebug(@"reading database file ...");
-        if (![manager copyItemAtPath:template_path toPath:database_path error:&error])
-        {
-            [NSException raise:@"IOException"
-                        format:@"failure in copuItemAtPath() [%@] -> [%@]", template_path, database_path
-             ];
-        }
-    }
-    LogDebug(@"opening database ...");
-    db = [FMDatabase databaseWithPath:database_path];
-    [db open];
-
     return self;
 }
 
@@ -169,6 +138,7 @@ NS_ENUM(NSInteger, F2ZOpType) {
     if (subdict == nil) {
         subdict = [[NSMutableDictionary alloc] init];
         LogDebug(@"querying database (areacode/linecode) = (%d/%d) ...", area, r1);
+        FMDatabase *db = [F2ZDBManager db:@"code"];
         FMResultSet *results =
         [db executeQuery:@"select stationcode, stationname, linename from stationcode where areacode = ? and linecode = ?",
          [NSNumber numberWithInt:area], [NSNumber numberWithInt:r1]];
