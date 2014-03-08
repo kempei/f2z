@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2105D618B8EB1200B5AE20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D518B8EB1200B5AE20 /* UIKit.framework */; };
+		BE2105D818B8EB1200B5AE20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D718B8EB1200B5AE20 /* Foundation.framework */; };
+		BE2105DA18B8EB1200B5AE20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */; };
+		BE2105E018B8EB1200B5AE20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE2105DE18B8EB1200B5AE20 /* InfoPlist.strings */; };
+		BE2105E218B8EB1200B5AE20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105E118B8EB1200B5AE20 /* main.m */; };
+		BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */; };
+		BE2105E818B8EB1200B5AE20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105E718B8EB1200B5AE20 /* Default.png */; };
+		BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105E918B8EB1200B5AE20 /* Default@2x.png */; };
+		BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */; };
+		BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */; };
+		BE2105F418B8EB1200B5AE20 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105F318B8EB1200B5AE20 /* first.png */; };
+		BE2105F618B8EB1200B5AE20 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105F518B8EB1200B5AE20 /* first@2x.png */; };
+		BE2105F918B8EB1200B5AE20 /* F2ZSecondViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2105F818B8EB1200B5AE20 /* F2ZSecondViewC.m */; };
+		BE2105FB18B8EB1200B5AE20 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105FA18B8EB1200B5AE20 /* second.png */; };
+		BE2105FD18B8EB1200B5AE20 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2105FC18B8EB1200B5AE20 /* second@2x.png */; };
+		BE21060518B8EB1200B5AE20 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21060418B8EB1200B5AE20 /* SenTestingKit.framework */; };
+		BE21060618B8EB1200B5AE20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D518B8EB1200B5AE20 /* UIKit.framework */; };
+		BE21060718B8EB1200B5AE20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2105D718B8EB1200B5AE20 /* Foundation.framework */; };
+		BE21060F18B8EB1200B5AE20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */; };
+		BE21061218B8EB1200B5AE20 /* f2zTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21061118B8EB1200B5AE20 /* f2zTests.m */; };
+		BE21061C18B8EB5300B5AE20 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */; };
+		BE21062218B8EFA800B5AE20 /* F2ZFelicaReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */; };
+		BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */ = {isa = PBXBuildFile; fileRef = BE21062318B8F92B00B5AE20 /* nfc110_ble.c */; };
+		BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062718B9E60A00B5AE20 /* F2ZRecord.m */; };
+		BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewC.m */; };
+		BE6C212218C2BC0D004B2038 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C211D18C2BC0D004B2038 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212318C2BC0D004B2038 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C211F18C2BC0D004B2038 /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212418C2BC0D004B2038 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212118C2BC0D004B2038 /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212918C2BC1C004B2038 /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212618C2BC1C004B2038 /* GTMOAuthAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212A18C2BC1C004B2038 /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212818C2BC1C004B2038 /* GTMOAuthSignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212E18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C212C18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE6C212F18C2BC29004B2038 /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6C212D18C2BC29004B2038 /* GTMOAuthViewTouch.xib */; };
+		BE6C213118C2BD1A004B2038 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C213018C2BD1A004B2038 /* SystemConfiguration.framework */; };
+		BE6C213318C2BD22004B2038 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C213218C2BD22004B2038 /* Security.framework */; };
+		BE6C213618C2C472004B2038 /* F2ZZaimAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C213518C2C472004B2038 /* F2ZZaimAuthController.m */; };
+		BE6C213A18C364FC004B2038 /* UIColor+iOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C213918C364FC004B2038 /* UIColor+iOS7Colors.m */; };
+		BE6C213D18C3788E004B2038 /* F2ZDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C213C18C3788E004B2038 /* F2ZDBManager.m */; };
+		BE6C213F18C37C63004B2038 /* history.db in Resources */ = {isa = PBXBuildFile; fileRef = BE6C213E18C37C63004B2038 /* history.db */; };
+		BE6C214518C5B20E004B2038 /* F2ZCategoryTableViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C214418C5B20E004B2038 /* F2ZCategoryTableViewC.m */; };
+		BE6C214B18C63045004B2038 /* F2ZCategoryEditViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C214A18C63045004B2038 /* F2ZCategoryEditViewC.m */; };
+		BE7D2DD318CA1B2F0063DABE /* F2ZFlickBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7D2DD218CA1B2F0063DABE /* F2ZFlickBarCell.m */; };
+		BE7D2DD618CA1FCA0063DABE /* F2ZCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7D2DD518CA1FCA0063DABE /* F2ZCategoryCell.m */; };
+		BE7D2DE218CA85620063DABE /* F2ZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7D2DE118CA85620063DABE /* F2ZCategory.m */; };
+		BEA815E818BA6456006FAFA2 /* libfelica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA815E718BA6456006FAFA2 /* libfelica.a */; };
+		BEA815F418BCA17A006FAFA2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */; };
+		BEA815F518BCA17A006FAFA2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */; };
+		BEA815F618BCA17A006FAFA2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815F118BCA17A006FAFA2 /* FMDatabasePool.m */; };
+		BEA815F718BCA17A006FAFA2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815F318BCA17A006FAFA2 /* FMDatabaseQueue.m */; };
+		BEA815FA18BCA18A006FAFA2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA815F918BCA18A006FAFA2 /* FMResultSet.m */; };
+		BEA815FC18BCA954006FAFA2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */; };
+		BEA815FE18BCA9DC006FAFA2 /* code.db in Resources */ = {isa = PBXBuildFile; fileRef = BEA815FD18BCA9DC006FAFA2 /* code.db */; };
+		BEA8160118BDE700006FAFA2 /* F2ZRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA8160018BDE700006FAFA2 /* F2ZRecordManager.m */; };
+		BEB4F4DE18BA278B00056153 /* F2ZHistoryRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB4F4DD18BA278B00056153 /* F2ZHistoryRecordCell.m */; };
+		BEC78A8218C20A4C00EDD7C3 /* F2ZFlickBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */; };
+		BEC78A8418C22C3400EDD7C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */; };
+		BEDB952218BEAC5A00888E95 /* F2ZHistoryDetailViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDB952118BEAC5A00888E95 /* F2ZHistoryDetailViewC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE21060818B8EB1200B5AE20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2105CA18B8EB1200B5AE20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2105D118B8EB1200B5AE20;
+			remoteInfo = f2z;
+		};
+		BE7D2DDC18CA83AB0063DABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7D2DD718CA83AA0063DABE /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
+			remoteInfo = QuickDialogExample;
+		};
+		BE7D2DDE18CA83AB0063DABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7D2DD718CA83AA0063DABE /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C542393145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2105D218B8EB1200B5AE20 /* f2z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = f2z.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2105D518B8EB1200B5AE20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE2105D718B8EB1200B5AE20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE2105DD18B8EB1200B5AE20 /* f2z-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "f2z-Info.plist"; sourceTree = "<group>"; };
+		BE2105DF18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE2105E118B8EB1200B5AE20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE2105E318B8EB1200B5AE20 /* f2z-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "f2z-Prefix.pch"; sourceTree = "<group>"; };
+		BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZAppDelegate.h; sourceTree = "<group>"; };
+		BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2ZAppDelegate.m; sourceTree = "<group>"; };
+		BE2105E718B8EB1200B5AE20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BE2105E918B8EB1200B5AE20 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BE2105EE18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BE2105F318B8EB1200B5AE20 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		BE2105F518B8EB1200B5AE20 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		BE2105F718B8EB1200B5AE20 /* F2ZSecondViewC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F2ZSecondViewC.h; sourceTree = "<group>"; };
+		BE2105F818B8EB1200B5AE20 /* F2ZSecondViewC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F2ZSecondViewC.m; sourceTree = "<group>"; };
+		BE2105FA18B8EB1200B5AE20 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		BE2105FC18B8EB1200B5AE20 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BE21060318B8EB1200B5AE20 /* f2zTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = f2zTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE21060418B8EB1200B5AE20 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE21060C18B8EB1200B5AE20 /* f2zTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "f2zTests-Info.plist"; sourceTree = "<group>"; };
+		BE21060E18B8EB1200B5AE20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE21061018B8EB1200B5AE20 /* f2zTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f2zTests.h; sourceTree = "<group>"; };
+		BE21061118B8EB1200B5AE20 /* f2zTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = f2zTests.m; sourceTree = "<group>"; };
+		BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BE21062018B8EFA700B5AE20 /* F2ZFelicaReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZFelicaReader.h; sourceTree = "<group>"; };
+		BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZFelicaReader.m; sourceTree = "<group>"; };
+		BE21062318B8F92B00B5AE20 /* nfc110_ble.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nfc110_ble.c; sourceTree = "<group>"; };
+		BE21062518B98EE900B5AE20 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		BE21062618B9E60A00B5AE20 /* F2ZRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZRecord.h; sourceTree = "<group>"; };
+		BE21062718B9E60A00B5AE20 /* F2ZRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecord.m; sourceTree = "<group>"; };
+		BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryViewC.h; sourceTree = "<group>"; };
+		BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryViewC.m; sourceTree = "<group>"; };
+		BE6C211C18C2BC0D004B2038 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcher.h"; sourceTree = SOURCE_ROOT; };
+		BE6C211D18C2BC0D004B2038 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcher.m"; sourceTree = SOURCE_ROOT; };
+		BE6C211E18C2BC0D004B2038 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetchHistory.h; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetchHistory.h"; sourceTree = SOURCE_ROOT; };
+		BE6C211F18C2BC0D004B2038 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetchHistory.m; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetchHistory.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212018C2BC0D004B2038 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherLogging.h; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcherLogging.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212118C2BC0D004B2038 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherLogging.m; path = "gtm-oauth/HTTPFetcher/GTMHTTPFetcherLogging.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212518C2BC1C004B2038 /* GTMOAuthAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthAuthentication.h; path = "gtm-oauth/Source/GTMOAuthAuthentication.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212618C2BC1C004B2038 /* GTMOAuthAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthAuthentication.m; path = "gtm-oauth/Source/GTMOAuthAuthentication.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212718C2BC1C004B2038 /* GTMOAuthSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthSignIn.h; path = "gtm-oauth/Source/GTMOAuthSignIn.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212818C2BC1C004B2038 /* GTMOAuthSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthSignIn.m; path = "gtm-oauth/Source/GTMOAuthSignIn.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212B18C2BC29004B2038 /* GTMOAuthViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthViewControllerTouch.h; path = "gtm-oauth/Source/Touch/GTMOAuthViewControllerTouch.h"; sourceTree = SOURCE_ROOT; };
+		BE6C212C18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthViewControllerTouch.m; path = "gtm-oauth/Source/Touch/GTMOAuthViewControllerTouch.m"; sourceTree = SOURCE_ROOT; };
+		BE6C212D18C2BC29004B2038 /* GTMOAuthViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuthViewTouch.xib; path = "gtm-oauth/Source/Touch/GTMOAuthViewTouch.xib"; sourceTree = SOURCE_ROOT; };
+		BE6C213018C2BD1A004B2038 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE6C213218C2BD22004B2038 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE6C213418C2C472004B2038 /* F2ZZaimAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZZaimAuthController.h; sourceTree = "<group>"; };
+		BE6C213518C2C472004B2038 /* F2ZZaimAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZZaimAuthController.m; sourceTree = "<group>"; };
+		BE6C213818C364FC004B2038 /* UIColor+iOS7Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iOS7Colors.h"; sourceTree = "<group>"; };
+		BE6C213918C364FC004B2038 /* UIColor+iOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS7Colors.m"; sourceTree = "<group>"; };
+		BE6C213B18C3788E004B2038 /* F2ZDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZDBManager.h; sourceTree = "<group>"; };
+		BE6C213C18C3788E004B2038 /* F2ZDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZDBManager.m; sourceTree = "<group>"; };
+		BE6C213E18C37C63004B2038 /* history.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = history.db; sourceTree = "<group>"; };
+		BE6C214318C5B20E004B2038 /* F2ZCategoryTableViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZCategoryTableViewC.h; sourceTree = "<group>"; };
+		BE6C214418C5B20E004B2038 /* F2ZCategoryTableViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZCategoryTableViewC.m; sourceTree = "<group>"; };
+		BE6C214918C63045004B2038 /* F2ZCategoryEditViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZCategoryEditViewC.h; sourceTree = "<group>"; };
+		BE6C214A18C63045004B2038 /* F2ZCategoryEditViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZCategoryEditViewC.m; sourceTree = "<group>"; };
+		BE7D2DD118CA1B2F0063DABE /* F2ZFlickBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZFlickBarCell.h; sourceTree = "<group>"; };
+		BE7D2DD218CA1B2F0063DABE /* F2ZFlickBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZFlickBarCell.m; sourceTree = "<group>"; };
+		BE7D2DD418CA1FCA0063DABE /* F2ZCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZCategoryCell.h; sourceTree = "<group>"; };
+		BE7D2DD518CA1FCA0063DABE /* F2ZCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZCategoryCell.m; sourceTree = "<group>"; };
+		BE7D2DD718CA83AA0063DABE /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = QuickDialog/QuickDialog.xcodeproj; sourceTree = "<group>"; };
+		BE7D2DE018CA85620063DABE /* F2ZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZCategory.h; sourceTree = "<group>"; };
+		BE7D2DE118CA85620063DABE /* F2ZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZCategory.m; sourceTree = "<group>"; };
+		BEA815E718BA6456006FAFA2 /* libfelica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfelica.a; path = "../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios/libfelica.a"; sourceTree = "<group>"; };
+		BEA815EC18BCA17A006FAFA2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../fmdb-master/src/FMDatabase.h"; sourceTree = "<group>"; };
+		BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../fmdb-master/src/FMDatabase.m"; sourceTree = "<group>"; };
+		BEA815EE18BCA17A006FAFA2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../fmdb-master/src/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../fmdb-master/src/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		BEA815F018BCA17A006FAFA2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../fmdb-master/src/FMDatabasePool.h"; sourceTree = "<group>"; };
+		BEA815F118BCA17A006FAFA2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../fmdb-master/src/FMDatabasePool.m"; sourceTree = "<group>"; };
+		BEA815F218BCA17A006FAFA2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../fmdb-master/src/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		BEA815F318BCA17A006FAFA2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../fmdb-master/src/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		BEA815F818BCA18A006FAFA2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../fmdb-master/src/FMResultSet.h"; sourceTree = "<group>"; };
+		BEA815F918BCA18A006FAFA2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../fmdb-master/src/FMResultSet.m"; sourceTree = "<group>"; };
+		BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		BEA815FD18BCA9DC006FAFA2 /* code.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = code.db; sourceTree = "<group>"; };
+		BEA815FF18BDE700006FAFA2 /* F2ZRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZRecordManager.h; sourceTree = "<group>"; };
+		BEA8160018BDE700006FAFA2 /* F2ZRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZRecordManager.m; sourceTree = "<group>"; };
+		BEB4F4DC18BA278B00056153 /* F2ZHistoryRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryRecordCell.h; sourceTree = "<group>"; };
+		BEB4F4DD18BA278B00056153 /* F2ZHistoryRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryRecordCell.m; sourceTree = "<group>"; };
+		BEC78A8018C20A4C00EDD7C3 /* F2ZFlickBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZFlickBar.h; sourceTree = "<group>"; };
+		BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZFlickBar.m; sourceTree = "<group>"; };
+		BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEDB952018BEAC5A00888E95 /* F2ZHistoryDetailViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F2ZHistoryDetailViewC.h; sourceTree = "<group>"; };
+		BEDB952118BEAC5A00888E95 /* F2ZHistoryDetailViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F2ZHistoryDetailViewC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2105CF18B8EB1200B5AE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C213318C2BD22004B2038 /* Security.framework in Frameworks */,
+				BE6C213118C2BD1A004B2038 /* SystemConfiguration.framework in Frameworks */,
+				BEC78A8418C22C3400EDD7C3 /* QuartzCore.framework in Frameworks */,
+				BEA815FC18BCA954006FAFA2 /* libsqlite3.0.dylib in Frameworks */,
+				BE21061C18B8EB5300B5AE20 /* CoreBluetooth.framework in Frameworks */,
+				BE2105D618B8EB1200B5AE20 /* UIKit.framework in Frameworks */,
+				BE2105D818B8EB1200B5AE20 /* Foundation.framework in Frameworks */,
+				BEA815E818BA6456006FAFA2 /* libfelica.a in Frameworks */,
+				BE2105DA18B8EB1200B5AE20 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2105FF18B8EB1200B5AE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21060518B8EB1200B5AE20 /* SenTestingKit.framework in Frameworks */,
+				BE21060618B8EB1200B5AE20 /* UIKit.framework in Frameworks */,
+				BE21060718B8EB1200B5AE20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE2105C918B8EB1200B5AE20 = {
+			isa = PBXGroup;
+			children = (
+				BE7D2DD718CA83AA0063DABE /* QuickDialog.xcodeproj */,
+				BE2105DB18B8EB1200B5AE20 /* f2z */,
+				BE21060A18B8EB1200B5AE20 /* f2zTests */,
+				BE2105D418B8EB1200B5AE20 /* Frameworks */,
+				BE2105D318B8EB1200B5AE20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2105D318B8EB1200B5AE20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2105D218B8EB1200B5AE20 /* f2z.app */,
+				BE21060318B8EB1200B5AE20 /* f2zTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2105D418B8EB1200B5AE20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C213218C2BD22004B2038 /* Security.framework */,
+				BE6C213018C2BD1A004B2038 /* SystemConfiguration.framework */,
+				BEC78A8318C22C3400EDD7C3 /* QuartzCore.framework */,
+				BEA815FB18BCA954006FAFA2 /* libsqlite3.0.dylib */,
+				BEA815E718BA6456006FAFA2 /* libfelica.a */,
+				BE21061B18B8EB5300B5AE20 /* CoreBluetooth.framework */,
+				BE2105D518B8EB1200B5AE20 /* UIKit.framework */,
+				BE2105D718B8EB1200B5AE20 /* Foundation.framework */,
+				BE2105D918B8EB1200B5AE20 /* CoreGraphics.framework */,
+				BE21060418B8EB1200B5AE20 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE2105DB18B8EB1200B5AE20 /* f2z */ = {
+			isa = PBXGroup;
+			children = (
+				BEF66BEA18C9FE6600F5317D /* entity */,
+				BEF66BEB18C9FE7D00F5317D /* processor */,
+				BEF66BE718C9FDB800F5317D /* view */,
+				BEF66BEC18C9FEBD00F5317D /* viewparts */,
+				BE2105E418B8EB1200B5AE20 /* F2ZAppDelegate.h */,
+				BE2105E518B8EB1200B5AE20 /* F2ZAppDelegate.m */,
+				BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */,
+				BE2105F318B8EB1200B5AE20 /* first.png */,
+				BE2105F518B8EB1200B5AE20 /* first@2x.png */,
+				BE2105FA18B8EB1200B5AE20 /* second.png */,
+				BE2105FC18B8EB1200B5AE20 /* second@2x.png */,
+				BEA815EB18BCA073006FAFA2 /* lib */,
+				BE2105DC18B8EB1200B5AE20 /* Supporting Files */,
+				BEA815FD18BCA9DC006FAFA2 /* code.db */,
+				BE6C213E18C37C63004B2038 /* history.db */,
+			);
+			path = f2z;
+			sourceTree = "<group>";
+		};
+		BE2105DC18B8EB1200B5AE20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE2105DD18B8EB1200B5AE20 /* f2z-Info.plist */,
+				BE2105DE18B8EB1200B5AE20 /* InfoPlist.strings */,
+				BE2105E118B8EB1200B5AE20 /* main.m */,
+				BE2105E318B8EB1200B5AE20 /* f2z-Prefix.pch */,
+				BE2105E718B8EB1200B5AE20 /* Default.png */,
+				BE2105E918B8EB1200B5AE20 /* Default@2x.png */,
+				BE2105EB18B8EB1200B5AE20 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE21060A18B8EB1200B5AE20 /* f2zTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE21061018B8EB1200B5AE20 /* f2zTests.h */,
+				BE21061118B8EB1200B5AE20 /* f2zTests.m */,
+				BE21060B18B8EB1200B5AE20 /* Supporting Files */,
+			);
+			path = f2zTests;
+			sourceTree = "<group>";
+		};
+		BE21060B18B8EB1200B5AE20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE21060C18B8EB1200B5AE20 /* f2zTests-Info.plist */,
+				BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE6C211B18C2BBC2004B2038 /* gtm-oauth */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C212D18C2BC29004B2038 /* GTMOAuthViewTouch.xib */,
+				BE6C212B18C2BC29004B2038 /* GTMOAuthViewControllerTouch.h */,
+				BE6C212C18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m */,
+				BE6C212518C2BC1C004B2038 /* GTMOAuthAuthentication.h */,
+				BE6C212618C2BC1C004B2038 /* GTMOAuthAuthentication.m */,
+				BE6C212718C2BC1C004B2038 /* GTMOAuthSignIn.h */,
+				BE6C212818C2BC1C004B2038 /* GTMOAuthSignIn.m */,
+				BE6C211C18C2BC0D004B2038 /* GTMHTTPFetcher.h */,
+				BE6C211D18C2BC0D004B2038 /* GTMHTTPFetcher.m */,
+				BE6C211E18C2BC0D004B2038 /* GTMHTTPFetchHistory.h */,
+				BE6C211F18C2BC0D004B2038 /* GTMHTTPFetchHistory.m */,
+				BE6C212018C2BC0D004B2038 /* GTMHTTPFetcherLogging.h */,
+				BE6C212118C2BC0D004B2038 /* GTMHTTPFetcherLogging.m */,
+			);
+			name = "gtm-oauth";
+			sourceTree = "<group>";
+		};
+		BE6C213718C364D4004B2038 /* iOSColors */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C213818C364FC004B2038 /* UIColor+iOS7Colors.h */,
+				BE6C213918C364FC004B2038 /* UIColor+iOS7Colors.m */,
+			);
+			name = iOSColors;
+			sourceTree = "<group>";
+		};
+		BE7D2DD818CA83AA0063DABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE7D2DDD18CA83AB0063DABE /* QuickDialogExample.app */,
+				BE7D2DDF18CA83AB0063DABE /* libQuickDialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA815EB18BCA073006FAFA2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BEF66BED18C9FED200F5317D /* FMDB */,
+				BE6C213718C364D4004B2038 /* iOSColors */,
+				BE6C211B18C2BBC2004B2038 /* gtm-oauth */,
+				BE21062318B8F92B00B5AE20 /* nfc110_ble.c */,
+				BE21062518B98EE900B5AE20 /* Logging.h */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		BEF66BE718C9FDB800F5317D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C214918C63045004B2038 /* F2ZCategoryEditViewC.h */,
+				BE6C214A18C63045004B2038 /* F2ZCategoryEditViewC.m */,
+				BE6C214318C5B20E004B2038 /* F2ZCategoryTableViewC.h */,
+				BE6C214418C5B20E004B2038 /* F2ZCategoryTableViewC.m */,
+				BEDB952018BEAC5A00888E95 /* F2ZHistoryDetailViewC.h */,
+				BEDB952118BEAC5A00888E95 /* F2ZHistoryDetailViewC.m */,
+				BE21062C18BA21AF00B5AE20 /* F2ZHistoryViewC.h */,
+				BE21062D18BA21AF00B5AE20 /* F2ZHistoryViewC.m */,
+				BE2105F718B8EB1200B5AE20 /* F2ZSecondViewC.h */,
+				BE2105F818B8EB1200B5AE20 /* F2ZSecondViewC.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		BEF66BEA18C9FE6600F5317D /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				BE21062618B9E60A00B5AE20 /* F2ZRecord.h */,
+				BE21062718B9E60A00B5AE20 /* F2ZRecord.m */,
+				BEA815FF18BDE700006FAFA2 /* F2ZRecordManager.h */,
+				BEA8160018BDE700006FAFA2 /* F2ZRecordManager.m */,
+				BE7D2DE018CA85620063DABE /* F2ZCategory.h */,
+				BE7D2DE118CA85620063DABE /* F2ZCategory.m */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		BEF66BEB18C9FE7D00F5317D /* processor */ = {
+			isa = PBXGroup;
+			children = (
+				BE21062018B8EFA700B5AE20 /* F2ZFelicaReader.h */,
+				BE21062118B8EFA700B5AE20 /* F2ZFelicaReader.m */,
+				BE6C213418C2C472004B2038 /* F2ZZaimAuthController.h */,
+				BE6C213518C2C472004B2038 /* F2ZZaimAuthController.m */,
+				BE6C213B18C3788E004B2038 /* F2ZDBManager.h */,
+				BE6C213C18C3788E004B2038 /* F2ZDBManager.m */,
+			);
+			name = processor;
+			sourceTree = "<group>";
+		};
+		BEF66BEC18C9FEBD00F5317D /* viewparts */ = {
+			isa = PBXGroup;
+			children = (
+				BEB4F4DC18BA278B00056153 /* F2ZHistoryRecordCell.h */,
+				BEB4F4DD18BA278B00056153 /* F2ZHistoryRecordCell.m */,
+				BE7D2DD418CA1FCA0063DABE /* F2ZCategoryCell.h */,
+				BE7D2DD518CA1FCA0063DABE /* F2ZCategoryCell.m */,
+				BE7D2DD118CA1B2F0063DABE /* F2ZFlickBarCell.h */,
+				BE7D2DD218CA1B2F0063DABE /* F2ZFlickBarCell.m */,
+				BEC78A8018C20A4C00EDD7C3 /* F2ZFlickBar.h */,
+				BEC78A8118C20A4C00EDD7C3 /* F2ZFlickBar.m */,
+			);
+			name = viewparts;
+			sourceTree = "<group>";
+		};
+		BEF66BED18C9FED200F5317D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				BEA815EC18BCA17A006FAFA2 /* FMDatabase.h */,
+				BEA815F818BCA18A006FAFA2 /* FMResultSet.h */,
+				BEA815F918BCA18A006FAFA2 /* FMResultSet.m */,
+				BEA815ED18BCA17A006FAFA2 /* FMDatabase.m */,
+				BEA815EE18BCA17A006FAFA2 /* FMDatabaseAdditions.h */,
+				BEA815EF18BCA17A006FAFA2 /* FMDatabaseAdditions.m */,
+				BEA815F018BCA17A006FAFA2 /* FMDatabasePool.h */,
+				BEA815F118BCA17A006FAFA2 /* FMDatabasePool.m */,
+				BEA815F218BCA17A006FAFA2 /* FMDatabaseQueue.h */,
+				BEA815F318BCA17A006FAFA2 /* FMDatabaseQueue.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2105D118B8EB1200B5AE20 /* f2z */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE21061518B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2z" */;
+			buildPhases = (
+				BE2105CE18B8EB1200B5AE20 /* Sources */,
+				BE2105CF18B8EB1200B5AE20 /* Frameworks */,
+				BE2105D018B8EB1200B5AE20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = f2z;
+			productName = f2z;
+			productReference = BE2105D218B8EB1200B5AE20 /* f2z.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE21060218B8EB1200B5AE20 /* f2zTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE21061818B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2zTests" */;
+			buildPhases = (
+				BE2105FE18B8EB1200B5AE20 /* Sources */,
+				BE2105FF18B8EB1200B5AE20 /* Frameworks */,
+				BE21060018B8EB1200B5AE20 /* Resources */,
+				BE21060118B8EB1200B5AE20 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE21060918B8EB1200B5AE20 /* PBXTargetDependency */,
+			);
+			name = f2zTests;
+			productName = f2zTests;
+			productReference = BE21060318B8EB1200B5AE20 /* f2zTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE2105CA18B8EB1200B5AE20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = F2Z;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kempei Igarashi";
+				TargetAttributes = {
+					BE2105D118B8EB1200B5AE20 = {
+						DevelopmentTeam = MF5KXN3ZQS;
+					};
+				};
+			};
+			buildConfigurationList = BE2105CD18B8EB1200B5AE20 /* Build configuration list for PBXProject "f2z" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE2105C918B8EB1200B5AE20;
+			productRefGroup = BE2105D318B8EB1200B5AE20 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BE7D2DD818CA83AA0063DABE /* Products */;
+					ProjectRef = BE7D2DD718CA83AA0063DABE /* QuickDialog.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BE2105D118B8EB1200B5AE20 /* f2z */,
+				BE21060218B8EB1200B5AE20 /* f2zTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BE7D2DDD18CA83AB0063DABE /* QuickDialogExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = QuickDialogExample.app;
+			remoteRef = BE7D2DDC18CA83AB0063DABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE7D2DDF18CA83AB0063DABE /* libQuickDialog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQuickDialog.a;
+			remoteRef = BE7D2DDE18CA83AB0063DABE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2105D018B8EB1200B5AE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2105E018B8EB1200B5AE20 /* InfoPlist.strings in Resources */,
+				BE2105E818B8EB1200B5AE20 /* Default.png in Resources */,
+				BEA815FE18BCA9DC006FAFA2 /* code.db in Resources */,
+				BE6C212F18C2BC29004B2038 /* GTMOAuthViewTouch.xib in Resources */,
+				BE6C213F18C37C63004B2038 /* history.db in Resources */,
+				BE2105EA18B8EB1200B5AE20 /* Default@2x.png in Resources */,
+				BE2105EC18B8EB1200B5AE20 /* Default-568h@2x.png in Resources */,
+				BE2105EF18B8EB1200B5AE20 /* MainStoryboard.storyboard in Resources */,
+				BE2105F418B8EB1200B5AE20 /* first.png in Resources */,
+				BE2105F618B8EB1200B5AE20 /* first@2x.png in Resources */,
+				BE2105FB18B8EB1200B5AE20 /* second.png in Resources */,
+				BE2105FD18B8EB1200B5AE20 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE21060018B8EB1200B5AE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21060F18B8EB1200B5AE20 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE21060118B8EB1200B5AE20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2105CE18B8EB1200B5AE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7D2DD318CA1B2F0063DABE /* F2ZFlickBarCell.m in Sources */,
+				BE2105E218B8EB1200B5AE20 /* main.m in Sources */,
+				BE6C212218C2BC0D004B2038 /* GTMHTTPFetcher.m in Sources */,
+				BE2105E618B8EB1200B5AE20 /* F2ZAppDelegate.m in Sources */,
+				BE7D2DE218CA85620063DABE /* F2ZCategory.m in Sources */,
+				BE6C213A18C364FC004B2038 /* UIColor+iOS7Colors.m in Sources */,
+				BE2105F918B8EB1200B5AE20 /* F2ZSecondViewC.m in Sources */,
+				BE6C214B18C63045004B2038 /* F2ZCategoryEditViewC.m in Sources */,
+				BE6C212A18C2BC1C004B2038 /* GTMOAuthSignIn.m in Sources */,
+				BEA815F418BCA17A006FAFA2 /* FMDatabase.m in Sources */,
+				BE21062218B8EFA800B5AE20 /* F2ZFelicaReader.m in Sources */,
+				BEA815F718BCA17A006FAFA2 /* FMDatabaseQueue.m in Sources */,
+				BEA815FA18BCA18A006FAFA2 /* FMResultSet.m in Sources */,
+				BEA815F618BCA17A006FAFA2 /* FMDatabasePool.m in Sources */,
+				BEC78A8218C20A4C00EDD7C3 /* F2ZFlickBar.m in Sources */,
+				BE6C212318C2BC0D004B2038 /* GTMHTTPFetchHistory.m in Sources */,
+				BE21062418B8F92B00B5AE20 /* nfc110_ble.c in Sources */,
+				BE21062818B9E60A00B5AE20 /* F2ZRecord.m in Sources */,
+				BE21062E18BA21AF00B5AE20 /* F2ZHistoryViewC.m in Sources */,
+				BE6C212E18C2BC29004B2038 /* GTMOAuthViewControllerTouch.m in Sources */,
+				BE7D2DD618CA1FCA0063DABE /* F2ZCategoryCell.m in Sources */,
+				BEB4F4DE18BA278B00056153 /* F2ZHistoryRecordCell.m in Sources */,
+				BE6C213D18C3788E004B2038 /* F2ZDBManager.m in Sources */,
+				BEA815F518BCA17A006FAFA2 /* FMDatabaseAdditions.m in Sources */,
+				BE6C212918C2BC1C004B2038 /* GTMOAuthAuthentication.m in Sources */,
+				BEDB952218BEAC5A00888E95 /* F2ZHistoryDetailViewC.m in Sources */,
+				BE6C214518C5B20E004B2038 /* F2ZCategoryTableViewC.m in Sources */,
+				BE6C213618C2C472004B2038 /* F2ZZaimAuthController.m in Sources */,
+				BE6C212418C2BC0D004B2038 /* GTMHTTPFetcherLogging.m in Sources */,
+				BEA8160118BDE700006FAFA2 /* F2ZRecordManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2105FE18B8EB1200B5AE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21061218B8EB1200B5AE20 /* f2zTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE21060918B8EB1200B5AE20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2105D118B8EB1200B5AE20 /* f2z */;
+			targetProxy = BE21060818B8EB1200B5AE20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE2105DE18B8EB1200B5AE20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2105DF18B8EB1200B5AE20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE2105ED18B8EB1200B5AE20 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2105EE18B8EB1200B5AE20 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		BE21060D18B8EB1200B5AE20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE21060E18B8EB1200B5AE20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE21061318B8EB1200B5AE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE21061418B8EB1200B5AE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE21061618B8EB1200B5AE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include",
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include/stub",
+					"../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/include",
+				);
+				INFOPLIST_FILE = "f2z/f2z-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kigarash/Documents/経費システム/BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE21061718B8EB1200B5AE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include",
+					"../BasicSuite-NFCPort110-1.0/Src/src/common/include/stub",
+					"../BasicSuite-NFCPort110-1.0/Src/src/arch/ios/include",
+				);
+				INFOPLIST_FILE = "f2z/f2z-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kigarash/Documents/経費システム/BasicSuite-NFCPort110-1.0/Src/src/arch/ios/build/felica/ios",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BE21061918B8EB1200B5AE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/f2z.app/f2z";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				INFOPLIST_FILE = "f2zTests/f2zTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BE21061A18B8EB1200B5AE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/f2z.app/f2z";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "f2z/f2z-Prefix.pch";
+				INFOPLIST_FILE = "f2zTests/f2zTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2105CD18B8EB1200B5AE20 /* Build configuration list for PBXProject "f2z" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21061318B8EB1200B5AE20 /* Debug */,
+				BE21061418B8EB1200B5AE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE21061518B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2z" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21061618B8EB1200B5AE20 /* Debug */,
+				BE21061718B8EB1200B5AE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE21061818B8EB1200B5AE20 /* Build configuration list for PBXNativeTarget "f2zTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21061918B8EB1200B5AE20 /* Debug */,
+				BE21061A18B8EB1200B5AE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE2105CA18B8EB1200B5AE20 /* Project object */;
+}
